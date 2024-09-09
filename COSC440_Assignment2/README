@@ -1,0 +1,78 @@
+<!-- Questions -->
+
+1: It all runs, I had to use a pooling layer to get the outputs from cnn > relu > layer 1 to match in size, this isnt in the 
+doc until the end of section 3, but I still needed to use it...
+
+Note: the 'optional' part of q3 is in modelpart3_a. Added 3 total cnn layers, pooling on each one and parameters ar edefined in the init for num filters and filter sizes.
+
+trains in about 3m on my m2 macbook air, I think that it's faster than the 10m because these things have an npu 
+
+2: Feed Forward (regular) vs CNN:
+    The images are the same image translated in X,Y. 
+    A CNN is a better choice because they specifically deal with images in a location aware way; i.e. the filters are designed to 'look' for features like edges or patterns regardless of their location, whereas a feed forward network looks for patterns in the data overall. CNNs use filters / kernels that 'go over' the image in 2d space; whereas like in the MNIST in ASS1; we made the data into a locationally unaware single vector and trained on patterns in those vectors (although there still, sort of, is spatial information, but not in the same way.) Our CNNS usually have many layers and through each can 'interpret' features with more translations than just X,Y (combination of each level of layers (or rather, forward pass combination)).
+
+ 
+3: the (default) dataset on the thing:
+
+Achieved loss of 0 (on train & test) with 4 nodes in 1 layer:
+
+The weights (after training):
+
+so:
+w11 0.51
+W12 -0.91
+
+W21 -2.4
+W22 0.61
+
+W31 1.2
+W32 2.0
+
+W41 -0.32
+W42 0.37
+
+For output:
+W01: -2.0
+W02: -2.5
+W03: -2.3
+W04: 3.3
+
+
+Therefore, with values: 
+
+output = 
+-2 *
+ReLU(0.51 * x1 - 0.91 * x2 + b1) + 
+-2.5 * 
+ReLU(-2.4 * x1 + 0.61 * x2 + b2) + 
+-2.3 *
+ReLU(1.2 * x1 + 2.4 * x2 + b3) + 
+3.3 *
+ReLU(-0.32 * x1 + 0.37 * x2 + b4) > 1
+
+Note: I've left biases empty but we should expect roughly, based on 'guessing' from the visualisation in the graphs in the tf playground..
+
+b1 Maybe around 0.5
+b2 Very close to zero
+b3 Close to zero - 0.2
+b4 : Very high
+
+
+
+4: 
+
+a
+Initial researcher claimed: forehead slope, ears  & symmetry of the face (and body too) could identify criminals....  (although not substantiated), Xiaolin, Xi claim Curvature of upper lip, Distance between two inner corners of the eyes and the angle between the corners of a persons mouth and their nose are contributors to categorziging as a criminal
+
+b: The reserachers explicitly described the alg as having learnt key features of the face. The photos should have similar lighting, backgrounds etc; however it is possible that some variation in the camera quality might be consistent with an area of high crime. 
+
+There's also hairstyles, collars, but also wrinkling and complexion. People who are more affluent may have a better haircare, skincare or work in careers where they're not affected by this. 
+
+The algorithm *did* achieve almost 90% accuracy... It is therefore effective at what it set out to do for data at the time. Sans facial hair and tattoos / markings is an interesting ommission (facial hair for men is a bit of an in-and-out of fashion decision for white collar workers, and i'm making the assertion, however true, that blue collar = higher crime) as it and it's stylign might be an indicator in this same way.
+
+It also stands to reason that children of criminals may be categorized as criminals due to facial structure.
+
+
+
+
+c: There are two cases fo misclassification: False positive would obviously be invasive to people, reduce trust in the algorithm, in some places the police may put too much faith in the classification and either not believe the person or waste resource. In false negative, a person who otherwise might have been caught could go on to conduct crime, causing consequences & wasting resources there. 
