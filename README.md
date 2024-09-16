@@ -1,5 +1,4 @@
-## Cosc440 @ UC 2024
-### Deep learning
+## Deep learning
 
 
 I aim to sufficiently comment all code in this repository and provide summary / annotated notes.
@@ -13,3 +12,16 @@ Grading / completeness update:
 
 
 Turns out that exporting onenote to pdf arrives at a filesize of 800mb. I've just popped some 4k screenshots into notes. Messy? scatterbrained? Yes!
+
+
+
+
+
+
+
+
+### What's this?
+
+If you squint really hard, you can see the labels.
+
+![AverageImages](./res/averageimages.png)
