@@ -1,4 +1,4 @@
-## Cosc440 @ UC 2024
+![My Logo](./images/logo.png)## Cosc440 @ UC 2024
 ### Deep learning
 
 
@@ -13,3 +13,10 @@ Grading / completeness update:
 
 
 Turns out that exporting onenote to pdf arrives at a filesize of 800mb. I've just popped some 4k screenshots into notes. Messy? scatterbrained? Yes!
+
+
+
+
+
+
+![AverageImages](./res/averageimages.png)
