@@ -22,9 +22,13 @@ Turns out that exporting onenote to pdf arrives at a filesize of 800mb. I've jus
 
 ### What's this?
 
-If you squint really hard, you can see the labels in the images. Ass 3 generates this from the decoder half of an autoencoder and I thought it was neat!
-
+If you squint really hard, you can see the labels in the images. The code in ass 3 generates a decoder and encoder... the below is the average horse (etc) from the decoder.
 
 
 ![AverageImages](./res/averageimages.png)
+
+
+In some ways, this is the world's most average horse.
+
+![AverageImages](./res/marge.gif)
 
