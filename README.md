@@ -1,5 +1,4 @@
-![My Logo](./images/logo.png)## Cosc440 @ UC 2024
-### Deep learning
+## Deep learning
 
 
 I aim to sufficiently comment all code in this repository and provide summary / annotated notes.
@@ -18,5 +17,11 @@ Turns out that exporting onenote to pdf arrives at a filesize of 800mb. I've jus
 
 
 
+
+
+
+### What's this?
+
+If you squint really hard, you can see the labels.
 
 ![AverageImages](./res/averageimages.png)
