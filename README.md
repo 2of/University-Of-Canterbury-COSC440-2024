@@ -22,6 +22,9 @@ Turns out that exporting onenote to pdf arrives at a filesize of 800mb. I've jus
 
 ### What's this?
 
-If you squint really hard, you can see the labels.
+If you squint really hard, you can see the labels in the images. Ass 3 generates this from the decoder half of an autoencoder and I thought it was neat!
+
+
 
 ![AverageImages](./res/averageimages.png)
+
