@@ -34,4 +34,4 @@ In some ways, this is the world's most average horse.
 
 ### Test info?
 
-Check notes (made pre-test). It's all in there
+Check notes (made pre-test, for obvious reasons. Probably worth poking around the keras / tf website beforehand)
