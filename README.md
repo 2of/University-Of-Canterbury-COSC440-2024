@@ -32,3 +32,6 @@ In some ways, this is the world's most average horse.
 
 ![AverageImages](./res/marge.gif)
 
+### Test info?
+
+Check notes (made pre-test). It's all in there
