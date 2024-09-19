@@ -31,6 +31,11 @@ If you squint really hard, you can see the labels in the images. The code in ass
 In some ways, this is the world's most average horse.
 
 *I realised that I implemented relu, not leaky relu, and making the changes has issues downstream on ass3. I don't think the network is deep enough that we would run into vanishing grad and I don't particularly think we'll be too penalized by the zero issue in terms of overall performance of the network on the dataset*
+
+
+
+
+
 ![AverageImages](./res/marge.gif)
 
 ### Test info?
